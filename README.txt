@@ -40,9 +40,7 @@ to the I2Pd documentation pages located at https://i2pd.readthedocs.io/en/latest
 
 - Tails OS live or persistence (live recommended). 
 
-Tails must be based on Debian 10 (4.XX).
-
-Tails 5 (yet to be released) will be based on Debian 11, this script will need to be updated for it.
+Tails (5.XX) must be based on Debian 11 [Bullseye].
  
  
 --------------------------------------------------------
