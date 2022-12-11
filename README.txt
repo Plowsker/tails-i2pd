@@ -91,16 +91,20 @@ Value: false
 
 Setting: network.proxy.socks
 Value:
-
-(the one above the field MUST be empty)
+(this field MUST be empty)
 
 Setting: network.proxy.autoconfig_url
 Value: "http://127.0.0.1:8181/proxy.pac"
-
-(the one above you MUST add the quotes ")
+(you MUST add the quotes ")
 
 Setting: network.proxy.type
 Value: 2
+
+Setting: dom.security.https_only_mode
+Value: false
+
+Setting: dom.security.https_only_mode_ever_enabled
+Value: false
 
 If they are not configured then input each one of them. Try visiting http://127.0.0.1:7070 you should see the I2Pd Router console.
 
@@ -111,12 +115,12 @@ Now try to visit any .b32.i2p address. Addresses such as http://stats.i2p and ht
 
 @ Updates @
 
-At some point you will need to update I2Pd. Current version: i2pd_2.39.0
+At some point you will need to update I2Pd. Current version: i2pd_2.44.0
 
 You will need to go to https://github.com/PurpleI2P/i2pd/releases and grab the link to the latest release. You should look for file which says something
-like buster amd64.deb.
+like bullseye amd64.deb.
 
-Now you have 2 choices. First choice is to do  systemctl stop i2pd  then   dpkg -i i2pd_XXXX-1buster1_amd64.deb where XXX is the numbers of the version.
+Now you have 2 choices. First choice is to do  systemctl stop i2pd  then   dpkg -i i2pd_XXXX-1bullseye1_amd64.deb where XXX is the numbers of the version.
 
 Second choice is to run  sudo apt-get remove --purge i2p* , add the new link to the install_i2pd.sh file and corresponding dpkg -i etc and rerun the script.
 
